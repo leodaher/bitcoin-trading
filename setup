@@ -1,0 +1,4 @@
+#!/bin/bash
+# Setup script
+
+pip install numpy sklearn pymongo requests datetime pytz apscheduler bigfloat
