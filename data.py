@@ -25,10 +25,10 @@ def tick():
     print(date, price, v_bid, v_ask)
 
 def main():
-    "Run tick() every 10 seconds"
+    "Run tick() every 60 seconds"
 
     scheduler = BlockingScheduler(timezone=utc)
-    scheduler.add_job(tick, 'interval', seconds=10)
+    scheduler.add_job(tick, 'interval', seconds=60)
     try:
         scheduler.start()
     except(KeyboardInterrupt, SystemExit):
